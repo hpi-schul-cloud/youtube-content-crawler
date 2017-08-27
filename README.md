@@ -39,7 +39,7 @@ CONTENT_USER, CONTENT_PASSWORD.
 ## TODOs
 - Simplify the config handling, which is the rest of an idea in another direction. 
 - Using Promise instead of callback at certain points.
-~~- Find another place for the crawler logic, which is unhandy as a module.~~
+- ~~Find another place for the crawler logic, which is unhandy as a module.~~
 - Maybe stress testing for a bigger bunch of channels.
 - Maybe make sc_youtube a real npm module.
 
