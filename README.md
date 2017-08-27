@@ -3,12 +3,14 @@ Fetching Youtube videos by given channel ids; posting their converted meta infor
 
 ## INSTALL
 call: 
-´´npm install´´
+```
+npm install
+```
 AND FOR THE TIME BEING:
-´´ 
+``` 
 cd ./local_modules/
 npm install
-´´
+```
 
 ## Basics
 The Schul-Cloud crawlers are a growing bunch of small pieces of code, intented to be coded by a Schul-Cloud community. Thus, our team tries to show several ways to participate and code a custom crawler for other content providers.
