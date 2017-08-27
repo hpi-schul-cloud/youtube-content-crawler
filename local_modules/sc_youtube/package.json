@@ -10,6 +10,6 @@
   "author": "Arne Oberländer",
   "license": "ISC",
   "dependencies": {
-    
+    "request-promise": "^4.2.1"
   }
 }
