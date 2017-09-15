@@ -5,8 +5,7 @@
   "private": true,
   "scripts": {
     "start": "node ./bin/www",
-    "debug": "nodemon --inspect=0.0.0.0:9229 ./bin/www",
-    "install":"cd ./local_modules/sc_youtubek&&npm install&&cd ../.."
+    "debug": "nodemon --inspect=0.0.0.0:9229 ./bin/www"
   },
   "keywords": [],
   "author": "",
