@@ -64,6 +64,7 @@ app.get('/', function (req, res, next) {
         httpAgent.maxSockets = 50;
         // Fetch video from the list of channels defined in config file
         crawler.crawl(app.locals.config, youtubeFetcher, _sendToFile);
+        crawler.crawl(app.locals.config, youtubeFetcher, poster);
         res.end("Crawling seems OK.")
     } else {
         res.send("Check the config!<br /> Intended config: <pre>" + JSON.stringify(objectAssign(appConfigSpec, crawler.configSpec || {}), undefined, 2) + "</pre>");
