@@ -9,10 +9,10 @@ RUN cd /opt && npm install
 ENV NODE_PATH=/opt/node_modules
 
 # Copy current directory to container
-COPY . /home/node
+COPY . /home/node/app
 
 USER node
-WORKDIR /home/node
+WORKDIR /home/node/app
 
 EXPOSE 5000
 CMD ["node", "bin/www"]
