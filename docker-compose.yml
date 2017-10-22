@@ -1,0 +1,22 @@
+version: '3'
+
+services:
+
+  youtube-content-crawler:
+    image: youtube-content-crawler:latest
+    build:
+      context: .
+      dockerfile: Dockerfile
+    environment:
+      PORT: ${PORT}
+      ENDPOINTURI: ${ENDPOINTURI}
+      CONTENT_USER: ${CONTENT_USER}
+      CONTENT_PASSWORD: ${CONTENT_PASSWORD}
+      APIKEY: ${APIKEY}
+      CHANNELS: ${CHANNELS}
+    ports:
+      - 5000:5000
+      - 9500:9500
+    volumes:
+      - .:/home/node
+    command: npm run debug

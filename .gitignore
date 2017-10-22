@@ -3,3 +3,6 @@ config/
 node_modules/
 *.txt
 package-lock.json
+.env
+.vscode
+.config
