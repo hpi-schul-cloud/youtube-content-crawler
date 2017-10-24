@@ -19,6 +19,9 @@ function _getItemsMeta(videoItems) {
     var metaItems = []
     videoItems.map(function (item) {
         if (item.hasOwnProperty("snippet") && item.hasOwnProperty("status") && item.hasOwnProperty("contentDetails")) {
+            //First tag shall always be the title of the channel
+            var tags = item.snippet.tags || [];
+            tags.unshift("Youtube")
             metaItems.push({
                 originId: item.id,
                 providerName: "Youtube",
@@ -28,7 +31,7 @@ function _getItemsMeta(videoItems) {
                 thumbnail: _getThumbnail(item.snippet.thumbnails).url,
                 contentCategory: 'atomic',
                 subject: "",
-                tags: item.snippet.tags || [],
+                tags: tags,
                 mimeType: 'video',
                 licenses: [item.status.license],
                 duration: moment.duration(item.contentDetails.duration).asSeconds()
