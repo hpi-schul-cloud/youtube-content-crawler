@@ -14,6 +14,7 @@ services:
       CONTENT_PASSWORD: ${CONTENT_PASSWORD}
       APIKEY: ${APIKEY}
       CHANNELS: ${CHANNELS}
+      NOPOST: ${NOPOST}
     ports:
       - 5000:5000
       - 9500:9500
