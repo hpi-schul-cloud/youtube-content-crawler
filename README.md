@@ -1,4 +1,7 @@
 # youtube-content-crawler
+
+[![Greenkeeper badge](https://badges.greenkeeper.io/schul-cloud/youtube-content-crawler.svg)](https://greenkeeper.io/)
+
 Fetching Youtube videos by given channel ids; posting their converted meta information to a Schul-Cloud endpoint.
 
 
